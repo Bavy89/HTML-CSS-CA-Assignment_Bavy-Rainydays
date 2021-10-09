@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+html{
+border: 8px solid #ffffff;
+        height: 100%;
+        margin: 0px;
+}
+
+body { 
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+font-family: 'Ubuntu', sans-serif;
+}
+
+#bavy{border: 4px solid red;}
+.container{
+width: 980px;
+margin: 0 auto;
+}
+
+.logotype{
+width: 250px;
+display: block;
+margin: 0 auto;
+}
+
+
+hr{
+margin: -3px;  
+border: 0;
+border-bottom: 1px solid #8a817c;
+}
+
+/********* MENU ***********/
+.menu{
+list-style: none;
+display: table;
+margin: 0 auto;
+padding: 0;
+margin-top: 22px;
+}   
+
+.menu li {
+float: left;
+margin-right: 15px;
+}
+
+.menu li a {
+border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: #0a3641;
+    color: #fff;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+.menu li a:hover{
+background: #e0afa0;
+}
+.menu li a.active{
+background: #e0afa0;
+}
+/********* MENU -> End ***********/
+
+.content{
+margin-top: 150px;
+}
+
+
+/********* HOME ***************/
+.home-text{
+width: 40%;
+float: left;
+color: #fff;
+font-weight: light;
+}
+.home-image{
+width: 50%;
+float: right;
+}
+
+.home-image img{
+width: 100%;
+}
+/******** HOME -> End **********/
+
+.top-icons{
+text-align: right;
+}
+.top-icons img{
+width: 30px;
+}
+
+
+.white-area-left{
+width: 200px;
+background: #ffffff;
+position: absolute;
+height: 101%;
+top: 0;
+left: 0;
+}
+.white-area-left-text{
+padding-left: 21px;
+padding-top: 17px;
+color: #707070;
+}
+.white-area-line-vertical{
+height: 80%;
+border-right: 1px solid #cccc;
+width: 106px;
+margin-top: 43px;
+}
+
+.white-area-right{
+width: 200px;
+background: #ffffff;
+position: absolute;
+height: 101%;
+top: 0;
+right: 0;
+}
+
+.right-icons {
+    position: absolute;
+    top: 343px;
+    left: 36px;
+}
+.right-icons img{
+  width: 30px;}
+
+.inner-content{
+background: #ffffff63;
+padding: 28px;
+color: #fff;    
+}
+
