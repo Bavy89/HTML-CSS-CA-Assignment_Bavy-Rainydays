@@ -3,6 +3,8 @@
 	<title>Rainydays</title>
 	<link href="css/stylesheet.css" type="text/css" rel="stylesheet"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 </head>
 <body>
 	
@@ -26,7 +28,12 @@
 				<img class="logotype" src="images/logotype.png">
 			</a>
 			<div class="top-icons">
-				<img src="images/icon_search.png"> <img src="images/icon_account.png"> <img src="images/icon_cart.png">
+				<label class="label-search" for="check">
+					<input class="search-check" id="check" type="checkbox">
+					<div class="content-search">
+					  <input type="text" class="search-box">
+					</div>
+					<img src="images/icon_search.png"></label><img src="images/icon_account.png"> <img src="images/icon_cart.png">
 			</div><!--top-icons-->
 			<hr>
 
@@ -43,7 +50,26 @@
 				<h1>Let us make it easy for you!</h1>
 			</div><!--home-text-->
 			<div class="home-image">
-				<img src="images/home_image.png">
+
+				<div class="wrapper">
+				<div class="carousel" tabindex="0">
+				  <div class="slide">
+				    <a href="#item-2">Slide 4</a>
+				    <img id="item-1" src="images/home_image-1.png" alt="">
+				    <a href="#item-2">Slide 2</a>
+				  </div>
+				  <div class="slide">
+				    <a href="#item-1">Slide 1</a>
+				    <img id="item-2" src="images/home_image-2.png" alt="">
+				    <a href="#item-1">Slide 3</a>
+				  </div>
+				</div>
+				<nav class="carousel__nav">
+
+				</nav>
+				</div>
+
+				
 			</div>
 		</div><!--content-->
 
