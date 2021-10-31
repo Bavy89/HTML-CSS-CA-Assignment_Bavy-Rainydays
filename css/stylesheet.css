@@ -25,30 +25,45 @@ hr{margin:-3px;border:0;border-bottom:1px solid #8a817c}
 .right-icons img{width:30px}
 .inner-content{background:#ffffff63;padding:45px;color:#fff}
 .yellow-star{float:right}
-.inner-content p1{text-align:left}
 .inner-content a{color: #fff}
+.inner-content{background:#ffffff63;padding:45px;color:#fff;min-width:100%;}
+.shop-box-text {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;align-items: flex-start;align-content: stretch;width: 92%;}
+.shop-box-img1 {margin-top: 1%;max-width: 30%;}
+.shop-box-img2 {margin-top: 1%;max-width: 30%;}
+.shop-box-img3 {margin-top: 1%;max-width: 30%;}
+.shop-box-img4 {margin-top: 1%;max-width: 30%;}
+.shop-box-img {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-around;align-items: flex-start;align-content: stretch;}
+
+
 
 form.login{
   width: 260px;
   font-size: 12px;
   margin: 0 auto;
 }
-
 form.login h1{text-align: center;}
 form.login input{background: none;
 border: 1px solid #fff;
 border-radius: 5px;
 font-size: 17px;
-width: 100%;}
-
+width: 100%;
+}
 form.login input[type="submit"]{
-  background: #e0afa0;
+background: #e0afa0;
 border: 0;
 margin: 10px 0 0 0;
 padding: 10px;
 color: #fff;
 }
 
+
+/*form contact*/
+form.contact{width: 260px;font-size: 12px;margin: 0 auto;}
+form.contact h1{text-align: center;}
+form.contact input{background: none; border: 1px solid #fff; border-radius: 5px; font-size: 17px; width: 100%;}
+form.contact textarea{padding: 18.5%; text-align: -moz-center;overflow: hidden;opacity: 78%;border-radius: 8px;}
+
+/*form contact*/
 
 /*RESPONSIVE*/
 @media (max-width: 1225px) {
@@ -73,7 +88,7 @@ color: #fff;
 
 }
 @media (max-width: 1024px) {
-.container{width:100%;}  
+.container{width:100%;}
 .content {margin-top: 50px}
 .home-image {
     width: 270px;
@@ -135,7 +150,7 @@ label.label-search {
 
 input.search-check:checked + .content-search {
   height: 5px;display: block;
-} 
+}
 
 
 /*SLIDER IMAGE
@@ -148,6 +163,7 @@ Carousel: https://codepen.io/oliverjam/pen/RwNyGNm
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   z-index: 0;
+  overflow: hidden;
 }
 
 .carousel:focus {
@@ -232,5 +248,5 @@ Carousel: https://codepen.io/oliverjam/pen/RwNyGNm
 }
 
 .carousel__nav a:hover {
-  
+
 }
