@@ -5,18 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
-<body>
-
+<body class="dark">
 	<div class="white-area-left">
-		<div class="white-area-left-text">Home page</div>
+		<div class="white-area-left-text">Product Description Page</div>
 		<div class="white-area-line-vertical"></div>
 	</div><!--white-area-left-->
 
 	<div class="white-area-right">
 		<div class="right-icons">
-			<img src="images/icon_social_facebook.png"><br>
-			<img src="images/icon_social_instagram.png"><br>
-			<img src="images/icon_social_youtube.png">
+			<a href="#">
+			<img src="images/icon_social_facebook.png" alt="icon-social-media">
+			</a><br>
+			<a href="#">
+			<img src="images/icon_social_instagram.png" alt="icon-social-media">
+			</a><br>
+			<a href="#">
+			<img src="images/icon_social_youtube.png" alt="icon-social-media">
+			</a>
 		</div>
 		<div class="white-area-line-vertical"></div>
 	</div><!--white-area-right-->
@@ -32,7 +37,8 @@
 					<div class="content-search">
 					  <input type="text" class="search-box">
 					</div>
-					<img src="images/icon_search.png"></label><img src="images/icon_account.png"> <img src="images/icon_cart.png">
+					<img src="images/icon_search.png" alt="icon"></label>
+					<a href="login.html"><img src="images/icon_account.png" alt="icon"></a><a href="order.view.html"><img src="images/icon_cart.png" alt="icon"></a>
 			</div><!--top-icons-->
 			<hr>
 
@@ -47,6 +53,8 @@
 		<div class="content">
 					<div class="inner-content">
 
+
+<div class="column-left">
 				<h1>Description of product</h1>
 				<p>ItemID and small description</p>
 				<div class="customer-review">
@@ -56,52 +64,37 @@
 						<img src="images/yellow-star.png" alt="yellowstar">
 						<img src="images/white-star.png" alt="whitestar">
 				</div>
-
-
-		<div class="list-product-information">
 				<div class="dot-icon">
 					<br>
-					<img src="images/dot-icon.png" alt="">
+					<img src="images/dot-icon.png" alt="dot-icon-list">
 							<span>waterproof</span>
 					<br>
 					<br>
-					<img src="images/dot-icon.png" alt="">
+					<img src="images/dot-icon.png" alt="dot-icon-list">
 							<span>Extreme breathability</span>
 					<br>
 					<br>
-					<img src="images/dot-icon.png" alt="">
+					<img src="images/dot-icon.png" alt="dot-icon-list">
 							<span>Wind proof</span>
 					<br>
 					<br>
-					<img src="images/dot-icon.png" alt="">
+					<img src="images/dot-icon.png" alt="dot-icon-list">
 							<span>Comes in five different colours</span>
 				</div>
+</div>
+<div class="column-right">
+	<img src="images/yellow-jacket.png" alt="yellow-jacket">
+	<br><br>
+	<select class="selec-color-button">
+		<option value="1">Choose color</option>
+		<option value="2">Yellow</option>
+		<option value="3">Blue</option>
+		<option value="4">Black</option>
+	</select>
+	<br><br>
+	<a href="order.view.html"	 class="add-to-cart-button">Buy now</a>
+</div>
 
-				<div class="item-choose-color">
-					<div class="jackets">
-						<img src="images/yellow-jacket.png" alt="">
-					</div>
-				</div>
-			<div class="select-color-jacket-img"> <!--select-color-->
-					<select class="selec-color-button">
-							<option value="1">Choose color</option>
-							<option value="2">Yellow</option>
-							<option value="3">Blue</option>
-							<option value="4">Black</option>
-					</select>
-
-					<button class="button">
-						<a href="#">
-					        <span>Buy now</span>
-					  </a>
-					</button>
-			</div> <!--select-color-->
-
-
-
-			</div>
-		</div>
-		</div>
 			</div><!--inner-content-->
 		</div><!--content-->
 
