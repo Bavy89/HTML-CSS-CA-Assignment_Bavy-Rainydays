@@ -70,9 +70,9 @@ button {
 .order-inner-content{margin-top: 15vh;}
 
 .order-inner-content details {
+width: 90%;
 margin: 1rem auto;
 padding: 7px 1rem;
-width: 40em;
 position: relative;
 border: 1px solid #78909C;
 border-radius: 2px;
