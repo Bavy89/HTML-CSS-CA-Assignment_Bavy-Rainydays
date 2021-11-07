@@ -3,7 +3,10 @@ html{
   /*border:8px solid #fff;*/
   height:100%;
   margin:0}
-body{background:url(../images/bg.jpg) no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;font-family:'Ubuntu',sans-serif;}
+body{
+-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../images/bg.jpg)no-repeat center center fixed;
+font-family:'Ubuntu',sans-serif;}
 
 #bavy{border:4px solid red}
 .container{width:55%;margin:0 auto}
@@ -30,16 +33,26 @@ hr{margin:-3px;border:0;border-bottom:1px solid #8a817c}
 .yellow-star{float:right}
 .inner-content a{color: #fff}
 .inner-content{background:#ffffff63;padding:45px;color:#fff;}
-.shop-box-text {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;align-items: flex-start;align-content: stretch;width: 90%;min-width: 90%;}
 
-.shop-box-img1 {margin-top: 1%;max-width: 30%;}
-.shop-box-img2 {margin-top: 1%;max-width: 30%;}
-.shop-box-img3 {margin-top: 1%;max-width: 30%;}
-.shop-box-img4 {margin-top: 1%;max-width: 30%;}
+.shop-box-text {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-between;align-items: flex-start;align-content: stretch;width: 90%;}
+#tents-text-shop{width: 100%;height: 100%;}
+#jackets-text-shop{width: 100%;height: 100%;}
+#shoes-text-shop{width: 100%;height: 100%;}
+#accessories-text-shop{width: 100%;height: 100%;}
+
+
+.shop-box-img1 {margin-top: 1%;width: 100%; height: 100%;}
+.shop-box-img2 {margin-top: 1%;width: 100%; height: 100%;}
+.shop-box-img3 {margin-top: 1%;width: 100%; height: 100%;}
+.shop-box-img4 {margin-top: 1%;width: 100%; height: 100%;}
+#tents-image {width: 100%;height: 100%;}
+#jackets-image {width: 100%;height: 100%;}
+#shoes-image {width: 100%;height: 100%;}
+#accesories-image {width: 100%;height: 100%;}
+
 .shop-box-img {display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: space-around;align-items: flex-start;align-content: stretch;}
-
 .dot-icon span {font-size: 20px;}
-.selec-color{float: right;margin-top: -5vh;}
+.selec-color-button{float: right;margin-top: -5vh;}
 select {appearance: none;border: 0;outline: 0;font: inherit;width: 14em;height: 3em;padding: 0 4em 0 1em;border-radius: 0.25em;}
 .jackets img {float: right;margin-top: -35vh;}
 button {
@@ -54,9 +67,7 @@ button {
  text-decoration: none;
 }
 
-.order-inner-content{
-margin-top: 15vh;
-}
+.order-inner-content{margin-top: 15vh;}
 
 .order-inner-content details {
 margin: 1rem auto;
@@ -69,20 +80,10 @@ background-color: #ffffff63;
 color: #263238;
 }
 
-summary {
-  list-style: none;
-}
+summary {list-style: none;}
 
-.order-inner-content p {
-  background-color: white;
-  width: 22vh;
-}
-
-
-.order-inner-content img {
-max-width: 50%;
-margin-bottom: 10px;
-}
+.order-inner-content p {background-color: white;width: 22vh;}
+.order-inner-content img {max-width: 50%;margin-bottom: 10px;}
 
 .white-bg-checkout {
 height: 90px;
@@ -95,27 +96,9 @@ border-radius: 15px;
 margin-top: 8vh;
 }
 
-#top-h1 {
-  font-size: 29px;
-  margin-top: -11vh;
-  text-align: center;
-  margin-right: 2vh;
-  font-weight: lighter;
-}
-
-#midle-h1{
-  font-size: 29px;
-  text-align: center;
-  font-weight: lighter;
-  margin-top: -2vh;
-}
-
-#bottom-h1 {
-  font-size: 15px;
-  font-weight: lighter;
-  padding-left: 3vh;
-  margin-top: 6vh;
-}
+#top-h1 {font-size: 29px;margin-top: -11vh;text-align: center;margin-right: 2vh;font-weight: lighter;}
+#midle-h1{font-size: 29px;text-align: center;font-weight: lighter;margin-top: -2vh;}
+#bottom-h1 {font-size: 15px;font-weight: lighter;padding-left: 3vh;margin-top: 6vh;}
 
 
 .white-bg-checkout img {
@@ -124,58 +107,30 @@ margin-top: 1vh;
 }
 
 
-
-form.login{
-  width: 260px;
-  font-size: 12px;
-  margin: 0 auto;
-}
+/*form login*/
+form.login{width: 260px;font-size: 12px;margin: 0 auto;}
 form.login h1{text-align: center;}
-form.login input{background: none;
-border: 1px solid #fff;
-border-radius: 5px;
-font-size: 17px;
-width: 100%;
-}
-form.login input[type="submit"]{
-background: #e0afa0;
-border: 0;
-margin: 10px 0 0 0;
-padding: 10px;
-color: #fff;
-}
-
+form.login input{background: none;border: 1px solid #fff;border-radius: 5px;font-size: 17px;width: 100%;}
+form.login input[type="submit"]{background: #e0afa0;border: 0;margin: 10px 0 0 0;padding: 10px;color: #fff;}
+/*form login*/
 
 /*form contact*/
 form.contact{width: 260px;font-size: 12px;margin: 0 auto;}
 form.contact h1{text-align: center;}
 form.contact input{background: none; border: 1px solid #fff; border-radius: 5px; font-size: 17px; width: 100%;}
 form.contact textarea{padding: 18.5%; text-align: -moz-center;overflow: hidden;opacity: 78%;border-radius: 8px;}
-
 /*form contact*/
 
 /*RESPONSIVE*/
 @media (max-width: 1225px) {
 .white-area-left{display: none;}
 .white-area-line-vertical{display: none}
-.right-icons {
-    position: absolute;
-    top: auto;
-    left: 10px;
-}
+.right-icons {position: absolute;top: auto;left: 10px;}
+
 .right-icons img {width: 21px;}
-.white-area-right {
-    padding-top: 4px;
-    width: 41px;
-    background: #fff;
-    position: fixed;
-    height: 67px;
-    top: 5px;
-    right: 6px;
-    border-radius: 10px;
+.white-area-right {padding-top: 4px;width: 41px;background: #fff;position: fixed;height: 67px;top: 5px;right: 6px;border-radius: 10px;}
 }
 
-}
 @media (max-width: 1024px) {
 .container{width:100%;}
 .content {margin-top: 50px}
@@ -186,8 +141,8 @@ html {border: 0px}
 .home-text {width: 100%;float: none;color: #fff;font-weight: light;text-align: center;}
 }
 
-@media (max-width: 780px) {
 
+@media (max-width: 780px) {
 .right-icons img {width: 20px;}
 .logotype{width: 132px}
 .top-icons{text-align:center}
@@ -195,16 +150,24 @@ html {border: 0px}
 .jackets img {margin-top: 0vh;margin-right: -3vh;}
 
 
-.menu li a {
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    background: #0a3641;
-    color: #fff;
-    text-decoration: none;
-    font-size: 12px;
-    padding: 7px 10px;
+.menu li a {border-top-right-radius: 15px;border-bottom-left-radius: 15px;background: #0a3641;color: #fff;text-decoration: none;font-size: 12px;padding: 7px 10px;}
 }
+
+@media (max-width: 810px) {
+  .jackets img {float: right;margin-top: -32vh;}
+  .selec-color-button{float: right;margin-top: -5vh;margin-right: -3vh;}
+  button {margin-right: 18vh;}
 }
+
+@media (max-width: 428px){
+.list-product-information {height: 70%;width: 100%;}
+.jackets img {margin-top: 1vh;margin-right: -3vh;}
+.selec-color-button{float: right;margin-top: 1vh;margin-right: -3vh;}
+button {margin-right: -3vh;margin-top: 1vh;}
+}
+
+
+
 /*RESPONSIVE*/
 
 
@@ -218,7 +181,7 @@ label.label-search {
   display: inline-block;
 }
 .search-box{
-  background: #fff9;
+    background: #fff9;
     border: 0;
     border-radius: 50px;
     padding: 10px;
