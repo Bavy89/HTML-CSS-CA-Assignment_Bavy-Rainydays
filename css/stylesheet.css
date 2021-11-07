@@ -159,6 +159,7 @@ html {border: 0px}
 }
 
 @media (max-width: 428px){
+.shop-box-text{width: 100%;}
 .list-product-information {height: 70%;width: 100%;}
 .jackets img {margin-top: 1vh;margin-right: -3vh;}
 .selec-color-button{float: right;margin-top: 1vh;margin-right: -3vh;}
