@@ -13,30 +13,10 @@
         r=o.createElement('script');r.async=1;
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');	
 </script>
 </head>
 <body class="dark">
-	<div class="white-area-left">
-		<div class="white-area-left-text">Order View Page</div>
-		<div class="white-area-line-vertical"></div>
-	</div><!--white-area-left-->
-
-	<div class="white-area-right">
-		<div class="right-icons">
-			<a href="#">
-			<img src="images/icon_social_facebook.png" alt="icon-social-media">
-			</a><br>
-			<a href="#">
-			<img src="images/icon_social_instagram.png" alt="icon-social-media">
-			</a><br>
-			<a href="#">
-			<img src="images/icon_social_youtube.png" alt="icon-social-media">
-			</a>
-		</div>
-		<div class="white-area-line-vertical"></div>
-	</div><!--white-area-right-->
-
 	<div class="container">
 		<div class="header">
 			<a href="index.html">
@@ -62,33 +42,117 @@
 		</div><!--header-->
 
 					<div class="order-inner-content">
-					<details>
-  					<summary> <img src="images/Icon shopping-cart.png" alt="shopping-cart-icon"> Shopping cart</summary>
-  						<p>Rain Coat Women</p>
-							<img src="images/rain-coat-women.png" alt="">
-					</details>
-					<details>
-						<summary> <img src="images/Icon-truck.png" alt="truck-icon">Delivery</summary>
-							<p>Delivery adresse</p>
-					</details>
-					<details>
-						<summary><img src="images/Icon-payment.png" alt="payment-icon">Payment</summary>
-							<p>Vipps / credit Card</p>
-					</details>
-					<details>
-						<summary><img src="images/Icon-check.png" alt="check-icon">Order summary</summary>
-							<p>Checkout</p>
-							<div class="button-confirm-purchase">
-								<a href="checkout.html"	 class="button-confirm-purchase">Confirm</a>
-					</details>
+						
+						<div class="checkout-section">
+							<h2>Shopping cart</h2>
+							<table>
+								  <tr class="header">
+									<td>Image</td>
+									<td>Product</td>
+									<td>Qty.</td>
+									<td>Delete</td>
+								  </tr>
+								  <tr id="articleRow1">
+									<td><img src="images/yellow-jacket.png"></td>
+									<td>Jacket - $45</td>
+									<td><input type="number" value="1"></td>
+									<td><button onclick="deleteArticle1()">X Delete</button></td>
+								  </tr>
+								  <tr id="articleRow2">
+									<td><img src="images/shoes.png"></td>
+									<td>Shoes - $30</td>
+									<td><input type="number" value="1"></td>
+									<td><button onclick="deleteArticle2()">X Delete</button></td>
+								  </tr>
+							</table>
+						</div>
+
+						<div class="checkout-section">
+							<h2>Delivery</h2>
+							<form class="address">
+								<div style="display: flex;">
+								<div class="col-1of2">
+									<label>Firstname</label>
+									<input type="text" placeholder="Please add your Firstname">
+									<label>Lastname</label>
+									<input type="text" placeholder="Please add your Lastname">
+									<label>Phone</label>
+									<input type="text" placeholder="Please add your Phone">
+								</div>
+								<div class="col-1of2">
+									<label>E-mail</label>
+									<input type="text" placeholder="Please add your Email">
+									<label>Address</label>
+									<input type="text" placeholder="Please add your Address">
+									<label>Address</label>
+									<input type="text" placeholder="Please add your Address">
+								</div>
+								</div>
+								<label>Country</label>
+								<select>
+									<option>Please select</option>
+									<option>Norway</option>
+									<option>Sweden</option>
+									<option>Danmark</option>
+									<option>Finland</option>
+								</select>
+								<label></label>
+								<textarea placeholder="Please add your comment here"></textarea>					
+							</form>
+						</div>						
+
+						<div class="checkout-section">
+							<h2>Payment</h2>
+							<form class="credit-card" action="checkout.html">
+								<label>Cardnumber</label>
+								<input type="text" class="card-number" placeholder="Card Number">
+								<label>Year</label>
+									  <select name="Month">
+										<option value="january">January</option>
+										<option value="february">February</option>
+										<option value="march">March</option>
+										<option value="april">April</option>
+										<option value="may">May</option>
+										<option value="june">June</option>
+										<option value="july">July</option>
+										<option value="august">August</option>
+										<option value="september">September</option>
+										<option value="october">October</option>
+										<option value="november">November</option>
+										<option value="december">December</option>
+									  </select>
+								<label>Month</label>
+									<div class="year">
+									  <select name="Year">
+										<option value="2022">2022</option>
+										<option value="2023">2023</option>
+										<option value="2024">2024</option>
+										<option value="2025">2025</option>
+										<option value="2026">2026</option>
+										<option value="2027">2027</option>
+									  </select>
+								<label>CVV/CVC</label>
+								<input type="text" placeholder="CVV">							   
+
+								<button type="submit" class="proceed-btn">Proceed to pay</button>
+							  </form>
+						</div>						
+
 				</div>
 
 			</div>
 
 		</div>
-			</div><!--inner-content-->
-
+		
+	</div><!--inner-content-->
 
 	</div><!--container-->
+
+	<div class="footer">
+		<a href="#"><img src="images/icon_social_facebook.png" alt="icon-social-media"></a>	<a href="#"><img src="images/icon_social_instagram.png" alt="icon-social-media"></a> 	<a href="#"><img src="images/icon_social_youtube.png" alt="icon-social-media"></a>
+	</div>
+		
+	<script src="script/script.js"></script>
+
 </body>
 </html>

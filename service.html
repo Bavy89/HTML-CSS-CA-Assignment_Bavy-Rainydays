@@ -14,29 +14,11 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
 </script>
 
 </head>
 <body class="dark">
-	<div class="white-area-left">
-		<div class="white-area-left-text">Service Page</div>
-		<div class="white-area-line-vertical"></div>
-	</div><!--white-area-left-->
-
-	<div class="white-area-right">
-		<div class="right-icons">
-			<a href="#">
-			<img src="images/icon_social_facebook.png" alt="icon-social-media">
-			</a><br>
-			<a href="#">
-			<img src="images/icon_social_instagram.png" alt="icon-social-media">
-			</a><br>
-			<a href="#">
-			<img src="images/icon_social_youtube.png" alt="icon-social-media">
-			</a>
-		</div>
-		<div class="white-area-line-vertical"></div>
-	</div><!--white-area-right-->
 
 	<div class="container">
 		<div class="header">
@@ -64,19 +46,26 @@
 
 		<div class="content">
 			<div class="inner-content">
-				<form class="contact">
+				<form class="contact" name="contact" onsubmit="return validateForm()" action="thanks.html">
 					<h1>Contact</h1>
-					<br>
-					<input type="text" name="first_name" placeholder="NAME" required><br><br>
-					<br>
-					<input type="text" name="first_name" placeholder="EMAIL" required>
-					<br>
-					<textarea name="comments" placeholder="WRITE HERE" required ></textarea>
-
+						<label>Your name</label>
+						<input type="text" name="name" id="name">
+						<label>Your e-mail</label>
+						<input type="text" name="email" id="email">
+						<label>Your phone</label>
+						<input type="text" name="phone" id="phone">
+						<label>Your message</label>
+						<textarea id="message" name="message"></textarea>
+						<input type="submit" value="Send your message">
 				</form>
 			</div><!--inner-content-->
 		</div><!--content-->
 
 	</div><!--container-->
+	<div class="footer">
+		<a href="#"><img src="images/icon_social_facebook.png" alt="icon-social-media"></a>	<a href="#"><img src="images/icon_social_instagram.png" alt="icon-social-media"></a> 	<a href="#"><img src="images/icon_social_youtube.png" alt="icon-social-media"></a>
+	</div>
+	
+	<script src="script/script.js"></script>
 </body>
 </html>
