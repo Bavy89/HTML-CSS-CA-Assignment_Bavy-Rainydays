@@ -29,3 +29,32 @@ function validateForm() {
         return false;
     }
 }
+
+// IMAGE SLIDE HOME PAGE
+
+
+const slides = document.querySelectorAll('[data-js="carousel__item"]')
+const prevBtn = document.querySelector('[data-js="carousel__button--prev"]')
+const nextBtn = document.querySelector('[data-js="carousel__button--next"]')
+
+let currentSlideItem = 0
+let lastSlideItem = slides.length - 1 
+
+const manipulatesSlidesClasses = slideIndex => {
+  slides.forEach((slide, i) => {
+    slide.classList.remove('carousel__item--visible')
+  })
+  slides[slideIndex].classList.add('carousel__item--visible')
+}
+
+nextBtn.addEventListener('click', () => {
+  const correctSlideIndex = currentSlideItem === lastSlideItem ? currentSlideItem = 0 : ++currentSlideItem
+  
+  manipulatesSlidesClasses(correctSlideIndex)
+})
+
+prevBtn.addEventListener('click', () => {
+  const correctSlideIndex = currentSlideItem === 0 ? currentSlideItem = lastSlideItem : --currentSlideItem
+  
+  manipulatesSlidesClasses(correctSlideIndex)
+})
