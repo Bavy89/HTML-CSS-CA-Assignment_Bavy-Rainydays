@@ -33,9 +33,9 @@ function validateForm() {
 // IMAGE SLIDE HOME PAGE
 
 
-const slides = document.querySelectorAll("[data-js="carousel__item"]")
-const prevBtn = document.querySelector("[data-js="carousel__button--prev"]")
-const nextBtn = document.querySelector("[data-js="carousel__button--next"]")
+const slides = document.querySelectorAll('[data-js="carousel__item"]')
+const prevBtn = document.querySelector('[data-js="carousel__button--prev"]')
+const nextBtn = document.querySelector('[data-js="carousel__button--next"]')
 
 let currentSlideItem = 0
 let lastSlideItem = slides.length - 1 
@@ -53,7 +53,7 @@ nextBtn.addEventListener("click", () => {
   manipulatesSlidesClasses(correctSlideIndex)
 })
 
-prevBtn.addEventListener('click', () => {
+prevBtn.addEventListener("click", () => {
   const correctSlideIndex = currentSlideItem === 0 ? currentSlideItem = lastSlideItem : --currentSlideItem
   
   manipulatesSlidesClasses(correctSlideIndex)
