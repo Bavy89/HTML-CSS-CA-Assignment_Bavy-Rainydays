@@ -532,9 +532,16 @@ form.contact textarea {
   gap: 3%;
     }
 
-    .shop-box-text{
-      display: none;
+  .shop-box-text{
+   display: none;
     }
+
+  .checkout-section table td input{
+    max-width: 24px;
+} 
+#delete {
+  display: none;
+}
 }
 
 
@@ -551,6 +558,8 @@ form.contact textarea {
     margin-right: -3vh;
   }
 }
+
+
 
 /*RESPONSIVE*/
 
