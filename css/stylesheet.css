@@ -96,6 +96,7 @@ hr {
   padding: 45px;
   color: #fff;
   min-height: fit-content;
+  width: fit-content;
 }
 
 .inner-content-product {
@@ -117,41 +118,10 @@ hr {
   color: #fff;
 }
 
-.shop-box-img1 {
+.shop-box-img {
   margin-top: 1%;
   width: 100%;
-  height: 100%;
-}
-.shop-box-img2 {
-  margin-top: 1%;
-  width: 100%;
-  height: 100%;
-}
-.shop-box-img3 {
-  margin-top: 1%;
-  width: 100%;
-  height: 100%;
-}
-.shop-box-img4 {
-  margin-top: 1%;
-  width: 100%;
-  height: 100%;
-}
-#tents-image {
-  width: 100%;
-  height: 100%;
-}
-#jackets-image {
-  width: 100%;
-  height: 100%;
-}
-#shoes-image {
-  width: 100%;
-  height: 100%;
-}
-#accesories-image {
-  width: 100%;
-  height: 100%;
+  height: auto%;
 }
 
 .column-left {
@@ -163,7 +133,7 @@ hr {
   float: left;
 }
 
-.shop-box-img {
+.products {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -518,7 +488,7 @@ form.contact textarea {
   }
   @media (max-width: 600px) {
 
-  .shop-box-img {
+  .products {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
