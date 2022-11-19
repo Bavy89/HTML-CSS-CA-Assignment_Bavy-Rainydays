@@ -58,3 +58,5 @@ prevBtn.addEventListener("click", () => {
   
   manipulatesSlidesClasses(correctSlideIndex)
 })
+
+
