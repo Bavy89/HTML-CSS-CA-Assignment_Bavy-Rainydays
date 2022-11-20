@@ -95,8 +95,6 @@ hr {
   background: #ffffff63;
   padding: 45px;
   color: #fff;
-  min-height: fit-content;
-  width: fit-content;
 }
 
 .inner-content-product {
@@ -123,7 +121,9 @@ hr {
   width: 100%;
   height: auto%;
 }
-
+.shop-box-img img {
+  max-width: 180px;
+}
 .column-left {
   width: 49%;
   float: left;
