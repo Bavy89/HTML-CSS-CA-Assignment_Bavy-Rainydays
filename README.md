@@ -6,6 +6,11 @@ October 2022, the website is improved with some new design and javascript functi
 
 ## Description
 
+This is a onine clothing website i made for a school project.
+The website is built with html, css and javascript. 
+
+I am also getting some information via API from wordpress.
+
 
 ## Built With
 
